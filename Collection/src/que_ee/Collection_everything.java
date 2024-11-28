@@ -1,0 +1,120 @@
+package que_ee;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.TreeMap;
+import java.util.TreeSet;
+import java.util.stream.Collectors;
+
+public class Collection_everything {
+	public static void main(String[] args) {
+		System.out.println("LIST"+"\n");
+		Collection<Integer> araylist=new ArrayList<>();
+		araylist.add(10);
+		araylist.add(123);
+		araylist.add(5432);
+		araylist.add(345);
+		araylist.add(456);
+		araylist.add(234);
+		araylist.add(44235);
+		System.out.println("araylist    : "+araylist);
+		Collection<Integer> linkedlist=new LinkedList<>();
+		linkedlist.add(10);
+		linkedlist.add(123);
+		linkedlist.add(5432);
+		linkedlist.add(345);
+		linkedlist.add(456);
+		linkedlist.add(234);
+		linkedlist.add(44235);
+		System.out.println("linkedlist  : "+linkedlist);
+		System.out.println("\n"+"QUEUE");
+			Queue<Integer> quelist=new PriorityQueue<>();
+			quelist.add(10);
+			quelist.add(5432);
+			quelist.add(123);
+			quelist.add(345);
+			quelist.add(444235);
+			quelist.add(234);
+			quelist.add(456);
+			System.out.println("\n"+"priorityque : "+quelist+"\n");
+			System.out.println("SET");
+			
+			Collection<Integer> hashlist=new HashSet<>();
+			hashlist.add(10);
+			hashlist.add(123);
+			hashlist.add(5432);
+			hashlist.add(345);
+			hashlist.add(456);
+			hashlist.add(234);
+			hashlist.add(44235);
+			System.out.println("\n"+"hasetset    : "+hashlist);
+			Collection<Integer> setlist=new LinkedHashSet<>();
+			setlist.add(10);
+			setlist.add(123);
+			setlist.add(5432);
+			setlist.add(345);
+			setlist.add(456);
+			setlist.add(234);
+			setlist.add(44235);
+			System.out.println( "linked haset: "+setlist);
+			
+			Collection<Integer> treeset=new TreeSet<>();
+			treeset.add(10);
+			treeset.add(123);
+			treeset.add(5432);
+			treeset.add(345);
+			treeset.add(456);
+			treeset.add(234);
+			treeset.add(44235);
+			System.out.println( "tree set    : "+setlist+"\n");
+			System.out.println("MAP"+"\n");
+			Map<String,Object> hashtable=new Hashtable<>();
+			hashtable.put("no:1 ",10);
+			hashtable.put("no:2 ",123);
+			hashtable.put("no:3 ",5432);
+			hashtable.put("no:4 ",345);
+			hashtable.put("no:5 ",456);
+			hashtable.put("no:6 ",234);
+			hashtable.put("no:7 ",44235);
+			System.out.println("hashtable    :    "+hashtable);
+			
+			Map<String,Object> hashmap=new HashMap<>();
+			hashmap.put("no:1 ",10);
+			hashmap.put("no:2 ",123);
+			hashmap.put("no:3 ",5432);
+			hashmap.put("no:4 ",345);
+			hashmap.put("no:5 ",456);
+			hashmap.put("no:6 ",234);
+			hashmap.put("no:7 ",44235);
+			System.out.println("hashmap      :    "+hashmap);
+			Map<String,Object> linkedhashmap=new LinkedHashMap<>();
+			linkedhashmap.put("no:1 ",10);
+			linkedhashmap.put("no:2 ",123);
+			linkedhashmap.put("no:3 ",5432);
+			linkedhashmap.put("no:4 ",345);
+			linkedhashmap.put("no:5 ",456);
+			linkedhashmap.put("no:6 ",234);
+			linkedhashmap.put("no:7 ",44235);
+			System.out.println("linkedhashmap:    "+linkedhashmap);
+			
+			Map<String,Object> treemap=new TreeMap<>();
+			treemap.put("no:1 ",10);
+			treemap.put("no:2 ",123);
+			treemap.put("no:3 ",5432);
+			treemap.put("no:4 ",345);
+			treemap.put("no:5 ",456);
+			treemap.put("no:6 ",234);
+			treemap.put("no:7 ",44235);
+			System.out.println("treemap      :    "+treemap);
+	}
+
+}
